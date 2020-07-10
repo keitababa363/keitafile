@@ -1,0 +1,268 @@
+body{
+  margin: 0;
+  padding: 0;
+  color:#333;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.wrapper{
+  height: 100vh;
+}
+
+
+li{
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: #333
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.headerIn{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 70px;
+}
+.headerBtn{
+ border: solid 1px #333;
+ text-align: center;
+ padding: 10px 12px;
+}
+
+.headerBtn a{
+  font-weight: bold;
+}
+
+
+.hamburgerMenu{
+  width: 40px;
+  height: 30px;
+  position: relative;
+}
+.line{
+  height: 1px;
+  background: #333;
+  width: 100%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+   transition: all 0.5s;
+}
+
+.line1{
+  transform: translateY(-15px) translateX(-50%);
+}
+
+.line3{
+  transform: translateY(15px) translateX(-50%);
+}
+
+div.line.line1.active{
+  transform: rotate(45deg) translateY(0) translateX(-50%);
+transform-origin: 0% 50%;
+}
+
+div.line.line2.active{
+  opacity: 0;
+  visibility: hidden;
+}
+
+div.line.line3.active{
+  transform: rotate(-45deg) translateY(0) translateX(-50%);
+  transform-origin: 0% 50%;
+}
+
+.globalMenu{
+  position: fixed;
+  top:100px;
+  right: 70px;
+  text-align: right;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s
+  } 
+
+.globalMenu.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+.top{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  font-size: 30px;
+  transform: translateY(-50%) translateX(-50%);
+  display: none;
+  }  
+
+  .title{
+  }
+
+.about,.service{
+  background-color: rgba(245, 245, 245, 0.625);
+  padding: 100px 0px;
+}
+
+.portfolio,.contact{
+  padding: 100px 0px;
+}
+
+.content{
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.aboutImage{
+  width: 45%;
+}
+
+.aboutImage img{
+  width: 90%;
+  border-radius: 50%
+}
+
+.profile{
+  width: 45%;
+}
+
+h2{
+  text-align: center;
+  border-bottom:solid #333;
+  padding-bottom: 15px; 
+  font-size: 1.75rem;
+  margin: 0px;
+}
+
+.profileContent{
+  padding: 40px;
+  text-align: left;
+}
+
+.profileContent p{
+  margin-top: 0px;
+}
+
+.skill_content{
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.skill{
+  width: 75px;
+  text-align: center
+}
+
+.fab{
+  font-size: 50px;
+}
+
+h1{
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.icon{
+  font-size: 90px;
+  width: 150px;
+  padding: 30px 0px;
+  border-radius: 50%;
+  background-color: rgb(53, 53, 53);
+  color: #fff;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.box{
+  text-align: center;
+}
+
+.box p{
+  text-align: left
+}
+
+h3{
+  font-size: 28px;
+  font-weight: normal
+}
+
+h4{
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.portfolio{
+  height: 100vh;
+}
+
+
+form{
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  text-align: center
+}
+
+.formContent{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin:30px 0px;
+}
+
+.formContent p{
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0px;
+}
+
+.mail{
+  margin-bottom: 60px;
+}
+
+.formContent input{
+  height: 40px;
+}
+
+
+footer{
+  background-color: rgb(53, 53, 53);
+}
+
+.footer_content{
+  display: flex;
+  padding: 40px 50px;
+  justify-content: space-between;
+}
+
+footer p{
+  color: #fff;
+  margin: 0;
+}
+
+footer .fab{
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 15px;
+}
